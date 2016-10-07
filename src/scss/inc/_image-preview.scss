@@ -1,0 +1,39 @@
+.image-preview {
+	display: block;
+	position: relative;
+	&:before {
+		background: rgba(0, 0, 0, 0.7);
+		bottom: 0;
+		content: '';
+		height: 100%;
+		left: 0;
+		opacity: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		transition: opacity .3s;
+		width: 100%;
+	}
+	&:after {
+		bottom: 0;
+		color: #ffffff;
+		content: "\f002";
+		font: normal normal normal 40px/40px FontAwesome;
+		height: 40px;
+		left: 0;
+		margin: auto;
+		opacity: 0;
+		position: absolute;
+		right: 0;
+		text-align: center;
+		top: 0;
+		transition: opacity .3s;
+		z-index: 1;
+	}
+	&:hover {
+		&:before,
+		&:after {
+			opacity: 1;
+		}
+	}
+}

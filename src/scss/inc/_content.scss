@@ -1,0 +1,8 @@
+.content {
+    a {
+        border-bottom: .08em solid transparent;
+        &:hover {
+            border-color: $link-hover-color;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "st-ovk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Belyash/st-ovk.git"
+  },
+  "author": "Vasily Lazarev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Belyash/st-ovk/issues"
+  },
+  "homepage": "https://github.com/Belyash/st-ovk#readme",
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "grunt": "^1.0.1",
+    "grunt-contrib-compass": "^1.1.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-pug": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^1.2.1",
+    "jcarousel": "^0.3.4"
+  }
+}

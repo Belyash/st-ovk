@@ -1,0 +1,216 @@
+extends ./layout/landing.jade
+
+block title
+    title= PAGE.title
+
+block section-1
+    div.landing-intro
+        h3.landing-intro__brand  Проектно-монтажная компания &laquo;Стандарт Климат&raquo;
+        h1.landing-intro__title Проектирование и монтаж
+        p.lead
+            | Мы занимаемся проектно-монтажными работами с 2008 года,
+            br
+            | на нашем счету уже более 1000 выполненных проектов.
+        div.landing-intro__buttons
+            a.btn.btn-lg.btn-success(href="#contactus") Напишите нам
+            | &nbsp;
+            a.btn.btn-lg.btn-default(href="#") Услуги
+
+block section-2
+    div.landing-block
+        h2.landing-block__title Выполненные проекты
+        p.lead.landing-block__text
+            | С 2008 года компания &laquo;Стандарт Климат&raquo; выполнила более 1000 проектов,
+            br
+            | вот лишь некоторые из них:
+        div.row
+            .col-md-4
+                div.thumbnail
+                    img(src="http://st-ovk.ru.opt-images.1c-bitrix-cdn.ru/upload/iblock/8bb/8bbe66ad56adb93bc17f1694daf0fbff.jpg")
+                    div.caption
+                        h3.text-center КП "Алешкино-2"
+                        ul
+                            li Площадь помещения: 158 м2
+                            li Проектирование отопления
+                            li Проектирование теплого пола
+                            li Проектирование водоснабжения и канализации
+                            li Проектирование котельной
+                            li Монтаж радиаторного отопления
+                            li Монтаж теплого пола
+                            li Монтаж водоснабжения и канализации
+                            li Монтаж котельной
+                        p.text-center
+                            a.btn.btn-primary Подробнее
+            .col-md-4
+                div.thumbnail
+                    img(src="http://st-ovk.ru.opt-images.1c-bitrix-cdn.ru/upload/iblock/8bb/8bbe66ad56adb93bc17f1694daf0fbff.jpg")
+                    div.caption
+                        h3.text-center КП "Алешкино-2"
+                        ul
+                            li Площадь помещения: 158 м2
+                            li Проектирование отопления
+                            li Проектирование теплого пола
+                            li Проектирование водоснабжения и канализации
+                            li Проектирование котельной
+                            li Монтаж радиаторного отопления
+                            li Монтаж теплого пола
+                            li Монтаж водоснабжения и канализации
+                            li Монтаж котельной
+                        p.text-center
+                            a.btn.btn-primary Подробнее
+            .col-md-4
+                div.thumbnail
+                    img(src="http://st-ovk.ru.opt-images.1c-bitrix-cdn.ru/upload/iblock/8bb/8bbe66ad56adb93bc17f1694daf0fbff.jpg")
+                    div.caption
+                        h3.text-center КП "Алешкино-2"
+                        ul
+                            li Площадь помещения: 158 м2
+                            li Проектирование отопления
+                            li Проектирование теплого пола
+                            li Проектирование водоснабжения и канализации
+                            li Проектирование котельной
+                            li Монтаж радиаторного отопления
+                            li Монтаж теплого пола
+                            li Монтаж водоснабжения и канализации
+                            li Монтаж котельной
+                        p.text-center
+                            a.btn.btn-primary Подробнее
+
+block section-3
+    div.landing-block
+        h2.landing-block__title Преимущества
+        p.lead.landing-block__text
+        div.row.text-center
+            .col-md-4
+                i.fa.fa-user(style="font-size: 100px;")
+                h3 Личный мастер 24/7
+                p Каждый клиент получает личного мастера, который доступен вам круглые сутки в течение проектирования и реализации проекта. Вы можете задать ему любой вопрос по поводу проектирования, проведения ремонтных работ, стоимости оборудования или монтажа.
+            .col-md-4
+                i.fa.fa-info-circle(style="font-size: 100px;")
+                h3 Бесплатная консультация
+                p Вам удобно с нами работать: 1 звонок и 1 бесплатная консультация в подарок. Наши специалисты делают все возможное, чтобы работать с нами было удобно. Именно по этой причине в нашей компании существует четко отлаженная система работы.
+            .col-md-4
+                i.fa.fa-tag(style="font-size: 100px;")
+                h3 Экономия до 40%
+                p Наши инженеры знают способы снизить ваши затраты не потеряв в качестве. Достигается это за счет налаженных связей с поставщиками и оптимизации производственных затрат. Но мы гарантируем, что с нашими специалистами Вы получаете экономию на 40% или даже больше.
+
+block section-4
+    div.row.text-center(style="line-height: 120px; padding: 50px 0;")
+        div.col-md-3
+            img(src="img/il_patio_planeta_sushi.png" width="250")
+        div.col-md-3
+            img(src="img/chaihona-no-1.png" width="250")
+        div.col-md-3
+            img(src="img/kfc.png" width="250")
+        div.col-md-3
+            img(src="img/pizza-hut.png" width="250")
+
+block section-5
+    div.landing-block
+        h2.landing-block__title Сертификаты
+        p.lead.landing-block__text Компания «Стандарт Климат» подтвердила качество работ не только выполненными проектами, но и наличием официальных документов. Это позволяет нам оказывать профессиональные услуги как частным лицам, так и коммерческим предприятиям, гарантируя при этом максимальный срок службы оборудования и техники.
+        div.jcarousel
+            span.jcarousel__nav.m-prev
+                i.fa.fa-angle-left
+            span.jcarousel__nav.m-next
+                i.fa.fa-angle-right
+            div.jcarousel__wrap
+                ul.jcarousel__list
+                    li.jcarousel__item
+                        a.image-preview(href="http://st-ovk.ru.opt-images.1c-bitrix-cdn.ru/upload/iblock/c46/c46528a4cf768c8250043aeb84af1a6f.jpg")
+                            img(src="http://st-ovk.ru.opt-images.1c-bitrix-cdn.ru/upload/iblock/c46/c46528a4cf768c8250043aeb84af1a6f.jpg")
+                    li.jcarousel__item
+                        a.image-preview(href="http://st-ovk.ru.opt-images.1c-bitrix-cdn.ru/upload/iblock/c46/c46528a4cf768c8250043aeb84af1a6f.jpg")
+                            img(src="http://st-ovk.ru.opt-images.1c-bitrix-cdn.ru/upload/iblock/c46/c46528a4cf768c8250043aeb84af1a6f.jpg")
+                    li.jcarousel__item
+                        a.image-preview(href="http://st-ovk.ru.opt-images.1c-bitrix-cdn.ru/upload/iblock/c46/c46528a4cf768c8250043aeb84af1a6f.jpg")
+                            img(src="http://st-ovk.ru.opt-images.1c-bitrix-cdn.ru/upload/iblock/c46/c46528a4cf768c8250043aeb84af1a6f.jpg")
+                    li.jcarousel__item
+                        a.image-preview(href="http://st-ovk.ru.opt-images.1c-bitrix-cdn.ru/upload/iblock/c46/c46528a4cf768c8250043aeb84af1a6f.jpg")
+                            img(src="http://st-ovk.ru.opt-images.1c-bitrix-cdn.ru/upload/iblock/c46/c46528a4cf768c8250043aeb84af1a6f.jpg")
+                    li.jcarousel__item
+                        a.image-preview(href="http://st-ovk.ru.opt-images.1c-bitrix-cdn.ru/upload/iblock/c46/c46528a4cf768c8250043aeb84af1a6f.jpg")
+                            img(src="http://st-ovk.ru.opt-images.1c-bitrix-cdn.ru/upload/iblock/c46/c46528a4cf768c8250043aeb84af1a6f.jpg")
+                    li.jcarousel__item
+                        a.image-preview(href="http://st-ovk.ru.opt-images.1c-bitrix-cdn.ru/upload/iblock/c46/c46528a4cf768c8250043aeb84af1a6f.jpg")
+                            img(src="http://st-ovk.ru.opt-images.1c-bitrix-cdn.ru/upload/iblock/c46/c46528a4cf768c8250043aeb84af1a6f.jpg")
+                    li.jcarousel__item
+                        a.image-preview(href="http://st-ovk.ru.opt-images.1c-bitrix-cdn.ru/upload/iblock/c46/c46528a4cf768c8250043aeb84af1a6f.jpg")
+                            img(src="http://st-ovk.ru.opt-images.1c-bitrix-cdn.ru/upload/iblock/c46/c46528a4cf768c8250043aeb84af1a6f.jpg")
+                    li.jcarousel__item
+                        a.image-preview(href="http://st-ovk.ru.opt-images.1c-bitrix-cdn.ru/upload/iblock/c46/c46528a4cf768c8250043aeb84af1a6f.jpg")
+                            img(src="http://st-ovk.ru.opt-images.1c-bitrix-cdn.ru/upload/iblock/c46/c46528a4cf768c8250043aeb84af1a6f.jpg")
+                    li.jcarousel__item
+                        a.image-preview(href="http://st-ovk.ru.opt-images.1c-bitrix-cdn.ru/upload/iblock/c46/c46528a4cf768c8250043aeb84af1a6f.jpg")
+                            img(src="http://st-ovk.ru.opt-images.1c-bitrix-cdn.ru/upload/iblock/c46/c46528a4cf768c8250043aeb84af1a6f.jpg")
+                    li.jcarousel__item
+                        a.image-preview(href="http://st-ovk.ru.opt-images.1c-bitrix-cdn.ru/upload/iblock/c46/c46528a4cf768c8250043aeb84af1a6f.jpg")
+                            img(src="http://st-ovk.ru.opt-images.1c-bitrix-cdn.ru/upload/iblock/c46/c46528a4cf768c8250043aeb84af1a6f.jpg")
+                    li.jcarousel__item
+                        a.image-preview(href="http://st-ovk.ru.opt-images.1c-bitrix-cdn.ru/upload/iblock/c46/c46528a4cf768c8250043aeb84af1a6f.jpg")
+                            img(src="http://st-ovk.ru.opt-images.1c-bitrix-cdn.ru/upload/iblock/c46/c46528a4cf768c8250043aeb84af1a6f.jpg")
+                    li.jcarousel__item
+                        a.image-preview(href="http://st-ovk.ru.opt-images.1c-bitrix-cdn.ru/upload/iblock/c46/c46528a4cf768c8250043aeb84af1a6f.jpg")
+                            img(src="http://st-ovk.ru.opt-images.1c-bitrix-cdn.ru/upload/iblock/c46/c46528a4cf768c8250043aeb84af1a6f.jpg")
+
+
+
+block section-6
+    div.landing-block#contactus
+        h2.landing-block__title Напишите нам
+        form.text-center
+            div.row
+                fieldset.col-md-3.col-md-offset-2
+                    label.form-group
+                        input.form-control.input-lg(type="text" placeholder="Имя")
+                    label.form-group
+                        input.form-control.input-lg(type="text" placeholder="Телефон")
+                    label.form-group
+                        input.form-control.input-lg(type="text" placeholder="Email")
+                fieldset.col-md-4
+                    textarea.form-control.input-lg(row="6")
+            fieldset
+                button.btn.btn-lg.btn-success Отправить
+
+
+block section-7
+    div.landing-block
+        h2.landing-block__title Наши партнёры
+        p.lead.landing-block__text За время работы мы успели познакомиться и поработать с продукцией многих отечественных и зарубежных компаний, среди которых системы вентиляции от завода Ятоган, отопительный и нагревательный котлы от красноярского завода ZOTA.
+        div.row.landing-partners
+            div.col-md-3
+                a(href="/partners/d8/" target="_blank")
+                    img(src="//st-ovk.ru.opt-images.1c-bitrix-cdn.ru/upload/iblock/0ab/0ab4babe7cc8a9a6104d88d901ee6dfd.jpg?146952189011196" alt="Гидрофильтры D8" title="D8" width="250")
+            div.col-md-3
+                a(href="/partners/d8/" target="_blank")
+                    img(src="//st-ovk.ru.opt-images.1c-bitrix-cdn.ru/upload/iblock/0ab/0ab4babe7cc8a9a6104d88d901ee6dfd.jpg?146952189011196" alt="Гидрофильтры D8" title="D8" width="250")
+            div.col-md-3
+                a(href="/partners/d8/" target="_blank")
+                    img(src="//st-ovk.ru.opt-images.1c-bitrix-cdn.ru/upload/iblock/0ab/0ab4babe7cc8a9a6104d88d901ee6dfd.jpg?146952189011196" alt="Гидрофильтры D8" title="D8" width="250")
+            div.col-md-3
+                a(href="/partners/d8/" target="_blank")
+                    img(src="//st-ovk.ru.opt-images.1c-bitrix-cdn.ru/upload/iblock/0ab/0ab4babe7cc8a9a6104d88d901ee6dfd.jpg?146952189011196" alt="Гидрофильтры D8" title="D8" width="250")
+            div.col-md-3
+                a(href="/partners/d8/" target="_blank")
+                    img(src="//st-ovk.ru.opt-images.1c-bitrix-cdn.ru/upload/iblock/0ab/0ab4babe7cc8a9a6104d88d901ee6dfd.jpg?146952189011196" alt="Гидрофильтры D8" title="D8" width="250")
+            div.col-md-3
+                a(href="/partners/d8/" target="_blank")
+                    img(src="//st-ovk.ru.opt-images.1c-bitrix-cdn.ru/upload/iblock/0ab/0ab4babe7cc8a9a6104d88d901ee6dfd.jpg?146952189011196" alt="Гидрофильтры D8" title="D8" width="250")
+            div.col-md-3
+                a(href="/partners/d8/" target="_blank")
+                    img(src="//st-ovk.ru.opt-images.1c-bitrix-cdn.ru/upload/iblock/0ab/0ab4babe7cc8a9a6104d88d901ee6dfd.jpg?146952189011196" alt="Гидрофильтры D8" title="D8" width="250")
+            div.col-md-3
+                a(href="/partners/d8/" target="_blank")
+                    img(src="//st-ovk.ru.opt-images.1c-bitrix-cdn.ru/upload/iblock/0ab/0ab4babe7cc8a9a6104d88d901ee6dfd.jpg?146952189011196" alt="Гидрофильтры D8" title="D8" width="250")
+            div.col-md-3
+                a(href="/partners/d8/" target="_blank")
+                    img(src="//st-ovk.ru.opt-images.1c-bitrix-cdn.ru/upload/iblock/0ab/0ab4babe7cc8a9a6104d88d901ee6dfd.jpg?146952189011196" alt="Гидрофильтры D8" title="D8" width="250")
+            div.col-md-3
+                a(href="/partners/d8/" target="_blank")
+                    img(src="//st-ovk.ru.opt-images.1c-bitrix-cdn.ru/upload/iblock/0ab/0ab4babe7cc8a9a6104d88d901ee6dfd.jpg?146952189011196" alt="Гидрофильтры D8" title="D8" width="250")
+            div.col-md-3
+                a(href="/partners/d8/" target="_blank")
+                    img(src="//st-ovk.ru.opt-images.1c-bitrix-cdn.ru/upload/iblock/0ab/0ab4babe7cc8a9a6104d88d901ee6dfd.jpg?146952189011196" alt="Гидрофильтры D8" title="D8" width="250")
+            div.col-md-3
+                a(href="/partners/d8/" target="_blank")
+                    img(src="//st-ovk.ru.opt-images.1c-bitrix-cdn.ru/upload/iblock/0ab/0ab4babe7cc8a9a6104d88d901ee6dfd.jpg?146952189011196" alt="Гидрофильтры D8" title="D8" width="250")

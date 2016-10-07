@@ -1,0 +1,78 @@
+.landing {
+	font-family: 'Roboto', sans-serif;
+	margin: -20px 0 0;
+}
+.landing-section {
+	&.m-cover {
+		background-color: rgba(0, 0, 0, 0.5);
+		background-image: url(/img/bg-1.jpg);
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-position: center center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		color: #fff;
+	}
+	&.m-bg-blue {
+		background: #0f9ae1;
+		color: #ffffff;
+		a {
+			color: #ffffff;
+		}
+	}
+	&.m-bg-gray {
+		background: #cccccc;
+	}
+	&.m-bg-dark {
+		background: #2a2730;
+		color: #999;
+		a {
+			color: #ccc;
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+}
+.landing-intro {
+	margin: auto;
+	padding: 50px 0;
+	text-align: center;
+	&__brand {
+		font-size: 24px;
+		line-height: 30px;
+		margin: 30px;
+	}
+	&__title {
+		font-weight: 700;
+		font-size: 48px;
+		line-height: 60px;
+		margin-bottom: 30px;
+		text-transform: uppercase;
+	}
+	&__buttons {
+		padding: 50px 0 0;
+	}
+}
+
+.landing-block {
+	padding: 100px 0;
+	&__title {;
+		font-size: 30px;
+		margin: 0 0 30px;
+		text-align: center;
+	}
+	&__text {
+		font-size: 18px;
+		margin: 0 0 50px;
+		text-align: center;
+	}
+}
+
+.landing-partners {
+	a {
+		display: inline-block;
+		margin: 0 0 10px;
+	}
+}

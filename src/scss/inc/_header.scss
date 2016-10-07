@@ -1,0 +1,17 @@
+.header {
+    padding: 10px 0;
+}
+
+.header-logo {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.header-contacts {
+    font-size: 24px;
+    line-height: 40px;
+    &__item {
+        display: block;
+    }
+}

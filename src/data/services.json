@@ -1,0 +1,34 @@
+{
+    "PAGE": {
+        "title": "Услуги",
+        "description": "A blog is a discussion or informational site published on the World Wide Web and consisting of discrete entries (\"posts\") typically displayed in reverse chronological order (the most recent post appears first).",
+        "picture": "./pic/pic_1.jpg",
+        "path": "/"
+    },
+    "sidebar": [
+        {
+            "link": "#",
+            "title": "Проектирование"
+        },
+        {
+            "link": "#",
+            "title": "Монтаж и пусконаладочные работы"
+        },
+        {
+            "link": "#",
+            "title": "Поставка оборудования и материалов"
+        },
+        {
+            "link": "#",
+            "title": "Сервисное и гарантийное обслуживание"
+        },
+        {
+            "link": "#",
+            "title": "Отопление"
+        },
+        {
+            "link": "#",
+            "title": "Вентиляция"
+        }
+    ]
+}
