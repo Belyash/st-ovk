@@ -8942,7 +8942,7 @@ button.close {
 /* line 6, ../../src/scss/inc/_landing.scss */
 .landing-section.m-cover {
   background-color: rgba(0, 0, 0, 0.5);
-  background-image: url(img/bg-1.jpg);
+  background-image: url(../img/bg-1.jpg);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
