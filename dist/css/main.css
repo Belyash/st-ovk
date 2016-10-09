@@ -8872,23 +8872,24 @@ button.close {
 
 /* line 1, ../../src/scss/inc/_header.scss */
 .header {
-  padding: 10px 0;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
-/* line 5, ../../src/scss/inc/_header.scss */
+/* line 6, ../../src/scss/inc/_header.scss */
 .header-logo {
   display: block;
   padding: 15px;
   text-decoration: none;
 }
 
-/* line 11, ../../src/scss/inc/_header.scss */
+/* line 12, ../../src/scss/inc/_header.scss */
 .header-contacts {
   font-size: 24px;
   line-height: 40px;
   text-align: right;
 }
-/* line 15, ../../src/scss/inc/_header.scss */
+/* line 16, ../../src/scss/inc/_header.scss */
 .header-contacts__item {
   display: block;
 }
@@ -8963,7 +8964,7 @@ button.close {
 }
 /* line 24, ../../src/scss/inc/_landing.scss */
 .landing-section.m-bg-gray {
-  background: #cccccc;
+  background: #eeeeee;
 }
 /* line 27, ../../src/scss/inc/_landing.scss */
 .landing-section.m-bg-dark {

@@ -44,6 +44,7 @@ module.exports = function(grunt) {
                 src: [
                     'node_modules/jquery/dist/jquery.min.js',
                     'node_modules/jcarousel/dist/jquery.jcarousel.min.js',
+                    'node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js',
                     'src/js/*.js'
                 ],
                 dest: 'dist/js/build.js'
