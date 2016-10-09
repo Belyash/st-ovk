@@ -71,8 +71,30 @@
 }
 
 .landing-partners {
-	a {
-		display: inline-block;
-		margin: 0 0 10px;
+	text-align: center;
+	&__link {
+		background-size: 100% auto;
+		background-position: center;
+		display: block;
+		margin: 10px 0;
+		padding: 40% 0 0;
+		text-align: center;
+		transition: box-shadow .2s, transform .2s;
+		width: 100%;
+		&:hover {
+			box-shadow: 0 15px 20px rgba(0,0,0,0.2);
+			transform: translate(0, -4px);
+		}
+		span {
+			display: none;
+		}
+	}
+}
+
+.landing-reasons {
+	counter-reset: reason;
+	h4:before {
+		counter-increment: reason;
+		content: "Причина " counter(reason) ": ";
 	}
 }

@@ -4513,32 +4513,32 @@ a.btn.disabled, fieldset[disabled] a.btn {
 /* line 71, ../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_buttons.scss */
 .btn-primary {
   color: #fff;
-  background-color: #0f78b7;
-  border-color: #0d699f;
+  background-color: #0f9ae1;
+  border-color: #0d8ac9;
 }
 /* line 11, ../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
-  background-color: #0b5988;
-  border-color: #031b2a;
+  background-color: #0c79b1;
+  border-color: #053852;
 }
 /* line 17, ../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-primary:hover {
   color: #fff;
-  background-color: #0b5988;
-  border-color: #084367;
+  background-color: #0c79b1;
+  border-color: #0a6290;
 }
 /* line 22, ../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #0b5988;
-  border-color: #084367;
+  background-color: #0c79b1;
+  border-color: #0a6290;
 }
 /* line 29, ../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus, .open > .btn-primary.dropdown-toggle:hover, .open > .btn-primary.dropdown-toggle:focus, .open > .btn-primary.dropdown-toggle.focus {
   color: #fff;
-  background-color: #084367;
-  border-color: #031b2a;
+  background-color: #0a6290;
+  border-color: #053852;
 }
 /* line 37, ../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
@@ -4546,12 +4546,12 @@ a.btn.disabled, fieldset[disabled] a.btn {
 }
 /* line 45, ../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus {
-  background-color: #0f78b7;
-  border-color: #0d699f;
+  background-color: #0f9ae1;
+  border-color: #0d8ac9;
 }
 /* line 53, ../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-primary .badge {
-  color: #0f78b7;
+  color: #0f9ae1;
   background-color: #fff;
 }
 
@@ -4768,7 +4768,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.33333;
-  border-radius: 6px;
+  border-radius: 4px;
 }
 
 /* line 139, ../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_buttons.scss */
@@ -4776,7 +4776,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
-  border-radius: 3px;
+  border-radius: 4px;
 }
 
 /* line 143, ../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_buttons.scss */
@@ -4784,7 +4784,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
   padding: 1px 5px;
   font-size: 12px;
   line-height: 1.5;
-  border-radius: 3px;
+  border-radius: 4px;
 }
 
 /* line 151, ../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_buttons.scss */
@@ -8886,8 +8886,9 @@ button.close {
 .header-contacts {
   font-size: 24px;
   line-height: 40px;
+  text-align: right;
 }
-/* line 14, ../../src/scss/inc/_header.scss */
+/* line 15, ../../src/scss/inc/_header.scss */
 .header-contacts__item {
   display: block;
 }
@@ -9020,8 +9021,72 @@ button.close {
   text-align: center;
 }
 
-/* line 74, ../../src/scss/inc/_landing.scss */
-.landing-partners a {
-  display: inline-block;
-  margin: 0 0 10px;
+/* line 73, ../../src/scss/inc/_landing.scss */
+.landing-partners {
+  text-align: center;
+}
+/* line 75, ../../src/scss/inc/_landing.scss */
+.landing-partners__link {
+  background-size: 100% auto;
+  background-position: center;
+  display: block;
+  margin: 10px 0;
+  padding: 40% 0 0;
+  text-align: center;
+  transition: box-shadow .2s, transform .2s;
+  width: 100%;
+}
+/* line 84, ../../src/scss/inc/_landing.scss */
+.landing-partners__link:hover {
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+  transform: translate(0, -4px);
+}
+/* line 88, ../../src/scss/inc/_landing.scss */
+.landing-partners__link span {
+  display: none;
+}
+
+/* line 94, ../../src/scss/inc/_landing.scss */
+.landing-reasons {
+  counter-reset: reason;
+}
+/* line 96, ../../src/scss/inc/_landing.scss */
+.landing-reasons h4:before {
+  counter-increment: reason;
+  content: "Причина " counter(reason) ": ";
+}
+
+@media all and (max-width: 600px) {
+  /* line 14, ../../src/scss/main.scss */
+  .header,
+  .header-contacts {
+    text-align: center;
+  }
+
+  /* line 18, ../../src/scss/main.scss */
+  .landing-block {
+    padding: 30px 0;
+  }
+
+  /* line 21, ../../src/scss/main.scss */
+  .landing-intro {
+    padding: 30px 0;
+  }
+
+  /* line 24, ../../src/scss/main.scss */
+  .landing-intro__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  /* line 28, ../../src/scss/main.scss */
+  .landing-intro__brand {
+    font-size: 18px;
+    margin: 15px;
+  }
+
+  /* line 32, ../../src/scss/main.scss */
+  .landing-intro__buttons {
+    padding-top: 20px;
+  }
 }
