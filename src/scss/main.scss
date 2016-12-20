@@ -1,7 +1,9 @@
 @import 'compass';
 @import 'variables';
 @import 'bootstrap';
+@import "mixins";
 
+@import "inc/bg-carousel";
 @import "inc/common";
 @import "inc/content";
 @import "inc/footer";
@@ -9,6 +11,10 @@
 @import "inc/header";
 @import "inc/image-preview";
 @import "inc/landing";
+
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+	display: block;
+}
 
 @media all and (max-width: 600px) {
 	.header,

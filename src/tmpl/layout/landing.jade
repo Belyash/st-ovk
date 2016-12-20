@@ -9,7 +9,7 @@ html
         link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css")
         link(rel="stylesheet" href="css/main.css" name="main-style")
             
-    body(class= PAGE.type ? "page-" + PAGE.type : "")
+    body.page-landing
 
         include ../inc/header.jade
 
@@ -17,6 +17,11 @@ html
 
         div.landing
             div.landing-section.m-cover
+                div.bg-carousel
+                    div.bg-carousel__slide.m-index-1
+                    div.bg-carousel__slide.m-index-2
+                    div.bg-carousel__slide.m-index-3
+                    div.bg-carousel__slide.m-index-4
                 div.container
                     block section-1
 
@@ -51,7 +56,5 @@ html
             div.landing-section.m-bg-gray
                 div.container
                     block section-9
-
-
 
         include ../inc/footer.jade

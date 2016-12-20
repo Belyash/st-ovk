@@ -38,10 +38,16 @@
 	}
 	&__item {
 		float: left;
+		height: 180px;
+		line-height: 180px;
+
 		width: 150px;
-		img {
-			margin: 0 10px;
+		a {
+			margin: auto 10px;
 			width: 130px;
+		}
+		img {
+			width: 100%;
 		}
 	}
 }

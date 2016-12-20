@@ -32,7 +32,10 @@ module.exports = function(grunt) {
                 options: {
                     importPath: ['node_modules/bootstrap-sass/assets/stylesheets/'],
                     sassDir: ['src/scss'],
-                    cssDir: 'dist/css'
+                    cssDir: 'dist/css',
+                    outputStyle: 'compressed',
+                    //debugInfo: false,
+                    force: true
                 }
             }
         },

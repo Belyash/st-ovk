@@ -1,6 +1,21 @@
 $(function() {
     var $carousel = $('.jcarousel__wrap'),
-        $reasons = $('#reasons-accordion');
+        $reasons = $('#reasons-accordion'),
+        $bgCarousel = $('.bg-carousel');
+
+    function bgcChangeSlide ($carousel) {
+        var $active = $carousel.find('.m-active'),
+            $next = $active.next();
+
+        if (!$next.length) {
+            $next = $carousel.children(':first');
+        }
+
+        $next.addClass('m-active');
+        $active.removeClass('m-active');
+
+        setTimeout(bgcChangeSlide.bind(null, $carousel), 4000);
+    }
 
     if ($carousel.length) {
         $carousel.jcarousel({
@@ -19,16 +34,22 @@ $(function() {
 
     if ($reasons.length) {
 
-        $reasons.find('h4').each(function () {
-            $(this).parents('.panel').find('.panel-collapse').collapse({
+        $reasons.find('.panel-heading').each(function () {
+            $(this).parent().find('.panel-collapse').collapse({
                 parent: $reasons,
                 toggle: false
             });
         });
 
-        $reasons.on('click', 'h4', function () {
-            $(this).parents('.panel').find('.panel-collapse').collapse('toggle');
+        $reasons.on('click', '.panel-heading', function () {
+            $(this).parent().find('.panel-collapse').collapse('toggle');
         });
+    }
+
+    if ($bgCarousel.length) {
+
+        bgcChangeSlide($bgCarousel);
+
     }
 
 });

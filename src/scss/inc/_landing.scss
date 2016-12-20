@@ -1,3 +1,8 @@
+.page-landing {
+	.footer {
+		margin: 0;
+	}
+}
 .landing {
 	font-family: 'Roboto', sans-serif;
 	margin: -20px 0 0;
@@ -5,14 +10,12 @@
 .landing-section {
 	&.m-cover {
 		background-color: rgba(0, 0, 0, 0.5);
-		background-image: url(../img/bg-1.jpg);
-		background-repeat: no-repeat;
-		background-attachment: scroll;
-		background-position: center center;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		background-size: cover;
 		color: #fff;
+		position: relative;
+		.container {
+			position: relative;
+			z-index: 2;
+		}
 	}
 	&.m-bg-blue {
 		background: #0f9ae1;
